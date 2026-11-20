@@ -306,21 +306,6 @@ src="https://www.facebook.com/tr?id=1476211534469795&ev=PageView&noscript=1"
     }
   }
 })();
-
-// ---- 10 second auto-redirect to Telegram ----
-(function(){
-  var seconds = 10;
-  var el = document.getElementById("countdown");
-  var timer = setInterval(function(){
-    seconds--;
-    if (el) el.textContent = seconds;
-    if (seconds <= 0) {
-      clearInterval(timer);
-      var link = document.getElementById("joinBtn");
-      window.location.href = (link && link.getAttribute("href")) || "https://telegram.me/+RAQOczrQCgRmMDg1";
-    }
-  }, 1000);
-})();
 </script>
 </body>
 </html>
